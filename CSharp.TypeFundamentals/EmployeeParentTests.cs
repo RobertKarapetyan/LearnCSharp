@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using CSharp.TypeFundamentals.Entities;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CSharp.TypeFundamentals
 {

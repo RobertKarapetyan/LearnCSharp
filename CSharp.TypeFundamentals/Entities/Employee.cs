@@ -1,4 +1,4 @@
-﻿namespace CSharp.TypeFundamentals
+﻿namespace CSharp.TypeFundamentals.Entities
 {
     public class Employee : EmployeeParent
     {
@@ -8,5 +8,23 @@
         }
 
         public string Name { get; }
+
+        public int GetYearsEmployed()
+        {
+            const int result = 5;
+            return result;
+        }
+
+        public virtual string GetProgressReport()
+        {
+            var result = "employee progress report";
+            return result;
+        }
+
+        public static Employee Lookup(string name)
+        {
+            var result = new Manager("Joe");
+            return result;
+        }
     }
 }

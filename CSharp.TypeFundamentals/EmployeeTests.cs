@@ -1,4 +1,6 @@
+using CSharp.TypeFundamentals.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TheParent = CSharp.TypeFundamentals.EmployeeParent;
 
 namespace CSharp.TypeFundamentals
 {
@@ -55,6 +57,13 @@ namespace CSharp.TypeFundamentals
         {
             var customer = _obj as Customer;
             Assert.IsNull(customer);
+        }
+
+        [TestMethod]
+        public void ShouldAliasClassName()
+        {
+            var theParent = new TheParent();
+            Assert.AreEqual(0, theParent.EmployeeParentId);
         }
     }
 }
