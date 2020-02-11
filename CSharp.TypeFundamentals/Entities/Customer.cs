@@ -1,6 +1,6 @@
 ﻿namespace CSharp.TypeFundamentals
 {
-    public class EmployeeParent
+    public class Customer
     {
     }
 }

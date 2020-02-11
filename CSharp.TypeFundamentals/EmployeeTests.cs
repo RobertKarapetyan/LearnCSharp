@@ -26,6 +26,7 @@ namespace CSharp.TypeFundamentals
         public void ShoulGetObjectType()
         {
             Assert.AreEqual("CSharp.TypeFundamentals.Employee", _obj.GetType().ToString());
+            Assert.IsTrue(_obj is Employee);
         }
 
         [TestMethod]
@@ -40,6 +41,20 @@ namespace CSharp.TypeFundamentals
         {
             EmployeeParent employeeParent = _employee;
             Assert.AreEqual("CSharp.TypeFundamentals.Employee", employeeParent.GetType().ToString());
+        }
+
+        [TestMethod]
+        public void ShouldCastUsingAsOperator()
+        {
+            var employee = _obj as Employee;
+            Assert.IsNotNull(employee);
+        }
+
+        [TestMethod]
+        public void ShouldNotCastObject()
+        {
+            var customer = _obj as Customer;
+            Assert.IsNull(customer);
         }
     }
 }
