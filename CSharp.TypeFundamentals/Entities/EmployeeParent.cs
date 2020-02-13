@@ -1,16 +1,7 @@
-﻿namespace CSharp.TypeFundamentals
+﻿namespace CSharp.TypeFundamentals.Entities
 {
     public class EmployeeParent
     {
-        public EmployeeParent()
-        {
-        }
-
-        public EmployeeParent(int employeeParentId)
-        {
-            EmployeeParentId = employeeParentId;
-        }
-
         public int EmployeeParentId { get; }
     }
 }

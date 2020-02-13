@@ -1,6 +1,4 @@
-﻿using CSharp.TypeFundamentals.Entities;
-
-namespace CSharp.TypeFundamentals
+﻿namespace CSharp.TypeFundamentals.Entities
 {
     public class Manager : Employee
     {
@@ -8,9 +6,7 @@ namespace CSharp.TypeFundamentals
         {
         }
 
-        public int MaangerId { get; set; }
-
-        public int GetYearsEmployed()
+        public new int GetYearsEmployed()
         {
             const int result = 2;
             return result;
@@ -18,7 +14,7 @@ namespace CSharp.TypeFundamentals
 
         public override string GetProgressReport()
         {
-            var result = "manager progress report";
+            const string result = "manager progress report";
             return result;
         }
     }

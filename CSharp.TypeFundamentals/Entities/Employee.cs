@@ -17,7 +17,7 @@
 
         public virtual string GetProgressReport()
         {
-            var result = "employee progress report";
+            const string result = "employee progress report";
             return result;
         }
 

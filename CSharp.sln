@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.TypeFundamentals", "CSharp.TypeFundamentals\CSharp.TypeFundamentals.csproj", "{73A5EB1A-BBC6-41C0-BE43-4CDB5A776142}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.PrimitveRefAndValTypes", "CSharp.PrimitveRefAndValTypes\CSharp.PrimitveRefAndValTypes.csproj", "{B210D3F1-E926-4F1E-A7FB-A76F7177E335}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{73A5EB1A-BBC6-41C0-BE43-4CDB5A776142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73A5EB1A-BBC6-41C0-BE43-4CDB5A776142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73A5EB1A-BBC6-41C0-BE43-4CDB5A776142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
