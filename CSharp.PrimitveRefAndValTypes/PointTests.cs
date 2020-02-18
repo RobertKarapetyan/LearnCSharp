@@ -50,12 +50,26 @@ namespace CSharp.PrimitveRefAndValTypes
         [TestMethod]
         public void ShouldChangeStructstate()
         {
-            var p1 = new ChangeablePoint(1, 1);
-            p1.Change(2, 2);
-            IChangable o = p1;
+            var p = new ChangeablePoint(1, 1);
+            p.Change(2, 2);
+            IChangable o = p;
             o.Change(3, 3);
             
-            Assert.AreNotEqual(o, p1);
+            Assert.AreNotEqual(o, p);
+        }
+
+        [TestMethod]
+        public void ShouldBoxAndChange()
+        {
+            var p = new ChangeablePoint(1, 1);
+
+            p.Change(2, 2);
+            Object o = p;
+            ((ChangeablePoint) o).Change(3, 3);
+            var p2 = ((IChangable) p);
+            p2.Change(4, 4);
+            Assert.AreEqual(o, p);
+            Assert.AreNotEqual(p2, o);
         }
     }
 }
