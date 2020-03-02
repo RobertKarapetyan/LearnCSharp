@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.TypeFundamentals", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.PrimitveRefAndValTypes", "CSharp.PrimitveRefAndValTypes\CSharp.PrimitveRefAndValTypes.csproj", "{B210D3F1-E926-4F1E-A7FB-A76F7177E335}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.TypeAndMemberBasics", "CSharp.TypeAndMemberBasics\CSharp.TypeAndMemberBasics.csproj", "{AAA69400-2C14-4D1A-9A36-DDDC78669164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B210D3F1-E926-4F1E-A7FB-A76F7177E335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA69400-2C14-4D1A-9A36-DDDC78669164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA69400-2C14-4D1A-9A36-DDDC78669164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA69400-2C14-4D1A-9A36-DDDC78669164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA69400-2C14-4D1A-9A36-DDDC78669164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

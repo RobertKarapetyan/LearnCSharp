@@ -27,5 +27,23 @@ namespace CSharp.PrimitveRefAndValTypes
         {
             Assert.AreEqual(typeof(string), s.GetType());
         }
+
+        [TestMethod]
+        public void TestSquare()
+        {
+            var mathOp = new MathOp<Object>();
+            var result = mathOp.Square(5);
+            Assert.AreEqual(25, result);
+        }
     }
+
+    class MathOp <T>
+    {
+        public T Square(dynamic n)
+        {
+            var result = n * n;
+            return result;
+        }
+    }
+    
 }
