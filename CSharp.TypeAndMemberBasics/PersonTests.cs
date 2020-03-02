@@ -23,5 +23,32 @@ namespace CSharp.TypeAndMemberBasics
             Person person = employee;
             Assert.AreEqual("Person Goodbye", person.Goodbye());
         }
+
+        [TestMethod]
+        public void ShouldGetAge()
+        {
+            const int age = 17;
+            
+            var employee = new Employee();
+            Person person = employee;
+            person.SetAge(age);
+
+            var e = (Employee) person;
+            Assert.AreEqual(age, e.AgeOfThePerson());
+        }
+
+        [TestMethod]
+        public void ShouldGetName()
+        {
+            const string name = "Albert";
+            
+            var employee = new Employee();
+            Person person = employee;
+            
+            person.SetName(name);
+
+            var e = (Employee) person;
+            Assert.AreEqual(name, e.GetPersonName());
+        }
     }
 }

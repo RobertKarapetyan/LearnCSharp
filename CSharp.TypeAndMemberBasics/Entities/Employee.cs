@@ -13,5 +13,23 @@
             const string result = "Employee Goodbye";
             return result;
         }
+
+        public int AgeOfThePerson()
+        {
+            var result = GetAge();
+            return result;
+        }
+
+        protected sealed override int GetAge()
+        {
+            var result = base.GetAge();
+            return result;
+        }
+
+        public new string GetPersonName()
+        {
+            var result = base.GetName();
+            return result;
+        }
     }
 }
