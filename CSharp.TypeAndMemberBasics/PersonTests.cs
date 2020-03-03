@@ -44,7 +44,7 @@ namespace CSharp.TypeAndMemberBasics
             
             var employee = new Employee();
             Person person = employee;
-            
+
             person.SetName(name);
 
             var e = (Employee) person;
