@@ -24,5 +24,14 @@ namespace CSharp.PrimitveRefAndValTypes
                 b = checked((Byte) (b + 200));
             });
         }
+
+        [TestMethod]
+        public void ShouldPerformDefaultBehavior()
+        {
+            int x = int.MaxValue;
+            int y = int.MaxValue;
+            int z = x * y;
+            Assert.AreEqual(int.MaxValue, z);
+        }
     }
 }
