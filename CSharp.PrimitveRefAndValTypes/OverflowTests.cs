@@ -31,7 +31,7 @@ namespace CSharp.PrimitveRefAndValTypes
             int x = int.MaxValue;
             int y = int.MaxValue;
             int z = x * y;
-            Assert.AreEqual(int.MaxValue, z);
+            Assert.AreEqual(1, z);
         }
     }
 }
