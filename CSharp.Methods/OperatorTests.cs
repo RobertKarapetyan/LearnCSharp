@@ -13,8 +13,6 @@ namespace CSharp.Methods
             var c2 = new Complex {Name = "c2"};
             var c1C2 = c1 + c2;
             Assert.AreEqual("c1c2", c1C2.Name);
-
-            Decimal x;
         }
     }
     
