@@ -28,8 +28,8 @@ namespace CSharp.TypeAndMemberBasics
         public void ShouldGetAge()
         {
             const int age = 17;
-            
             var employee = new Employee();
+
             Person person = employee;
             person.SetAge(age);
 
