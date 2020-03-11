@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -42,6 +43,21 @@ namespace CSharp.CharsStringsText
             };
             
             Assert.AreEqual(3, NumTimesWordAppearsIntern("a", wordList));
+        }
+
+        [TestMethod]
+        public void ShouldFormatGuid()
+        {
+            var guid = Guid.NewGuid();
+            Assert.AreEqual($"({guid.ToString()})", guid.ToString("P"));
+        }
+
+        [TestMethod]
+        public void ShouldFormatDecimal()
+        {
+            var price = 123.54M;
+            var s = price.ToString("C", new CultureInfo("vi-VN"));
+            Assert.AreEqual("123,54 ₫", s);
         }
         
         private static int NumTimesWordAppearsIntern(string word, string[] wordlist) 
