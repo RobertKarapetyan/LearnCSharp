@@ -6,15 +6,23 @@ namespace CSharp.Interfaces
     public class VarianceTests
     {
         [TestMethod]
-        public void ShouldConvertTopToBottom()
+        public void ShouldGetMediumForEmail()
         {
-            IMessenger<Message> messenger;
+            var messenger = new Messenger<EmailMessage>(new EmailMessage());
+            Assert.AreEqual(Medium.Email, GetMedium(messenger));
+        }
+        
+        [TestMethod]
+        public void ShouldGetMediumForPhone()
+        {
+            var messenger = new Messenger<TextMessage>(new TextMessage());
+            Assert.AreEqual(Medium.Phone, GetMedium(messenger));
+        }
 
-            messenger = new Messenger<EmailMessage>(new EmailMessage());
-            Assert.AreEqual(Medium.Email, messenger.Message().Medium());
-
-            messenger = new Messenger<TextMessage>(new TextMessage());;
-            Assert.AreEqual(Medium.Phone, messenger.Message().Medium());
+        private static Medium GetMedium(IMessenger<Message> messenger)
+        {
+            var result = messenger.Message().Medium();
+            return result;
         }
     }
 
