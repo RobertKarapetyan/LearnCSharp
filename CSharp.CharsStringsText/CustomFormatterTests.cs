@@ -30,20 +30,23 @@ namespace CSharp.CharsStringsText
         public string Format(string format, object arg, IFormatProvider formatProvider)
         {
             string result;
-            
-            if (!(arg is IFormattable formattable))
-            {
-                result = arg.ToString();
-            }
-            else
-            {
-                result = formattable.ToString(format, formatProvider);
-            }
 
             if (arg is int)
             {
-                result = "<B>" + result + "</B>";
+                result = "<B>" + arg + "</B>";
             }
+            else
+            {
+                result = NonIntFormat(arg, format, formatProvider);
+            }
+
+            return result;
+        }
+
+        private static string NonIntFormat(object arg, string format, IFormatProvider formatProvider)
+        {
+            var result = !(arg is IFormattable) ? 
+                arg.ToString() : ((IFormattable) arg).ToString(format, formatProvider);
 
             return result;
         }
