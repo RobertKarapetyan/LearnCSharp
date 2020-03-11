@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Events", "CSharp.Eve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Generics", "CSharp.Generics\CSharp.Generics.csproj", "{EC95202F-849E-444E-8401-276297308288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Interfaces", "CSharp.Interfaces\CSharp.Interfaces.csproj", "{BE95FC90-2C88-4D0F-90C9-1B9762221447}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{EC95202F-849E-444E-8401-276297308288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC95202F-849E-444E-8401-276297308288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC95202F-849E-444E-8401-276297308288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE95FC90-2C88-4D0F-90C9-1B9762221447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE95FC90-2C88-4D0F-90C9-1B9762221447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE95FC90-2C88-4D0F-90C9-1B9762221447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE95FC90-2C88-4D0F-90C9-1B9762221447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
