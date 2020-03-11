@@ -8,41 +8,45 @@ namespace CSharp.Interfaces
         [TestMethod]
         public void ShouldConvertTopToBottom()
         {
-            IMessenger<Message> messenger; 
-            
-            messenger = new Messenger<EmailMessage>();
-            var defaultMessage = messenger.Message();
-            Assert.AreEqual("CSharp.Interfaces.EmailMessage",  
-                defaultMessage.GetType().ToString());
-            Assert.AreEqual("abcd@mail.com", 
-                (defaultMessage as EmailMessage)?.EmailAddress);
+            IMessenger<Message> messenger;
 
-            messenger = new Messenger<TextMessage>();;
-            var textMessage = messenger.Message();
-            Assert.AreEqual("CSharp.Interfaces.TextMessage", 
-                textMessage.GetType().ToString());
-            Assert.AreEqual("123 456 7891", 
-                (textMessage as TextMessage)?.PhoneNumber);
+            messenger = new Messenger<EmailMessage>(new EmailMessage());
+            Assert.AreEqual(Medium.Email, messenger.Message().Medium());
+
+            messenger = new Messenger<TextMessage>(new TextMessage());;
+            Assert.AreEqual(Medium.Phone, messenger.Message().Medium());
         }
     }
 
-    internal interface IMessenger<out T> where T : IMessage
+    internal interface IMessenger<out T> 
     {
         T Message();
     }
 
     internal class Messenger<T> : IMessenger<T> where T : IMessage, new()
-    {    
+    {
+        private readonly T _message;
+        public Messenger(T message)
+        {
+            _message = message;
+        }
+        
         public T Message()
         {
-            var result = new T();
-            return result;
+            return _message;
         }
     }
 
     internal interface IMessage
     {
         string MessageBody();
+
+        Medium Medium();
+    }
+
+    enum Medium
+    {
+        Email, Phone
     }
 
     internal class Message : IMessage
@@ -59,25 +63,43 @@ namespace CSharp.Interfaces
            
         }
 
-        public string MessageBody()
+        public virtual string MessageBody()
         {
             var result = _messageBody;
             return result;
         }
+
+        public virtual Medium Medium()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual string ContactInfo { get; set; }
     }
     
     internal class EmailMessage : Message
     {
-        public string EmailAddress { get; set; } = "abcd@mail.com";
+        public override string ContactInfo { get; set; } = "abcd@mail.com";
 
         public EmailMessage()
         {
+        }
+        
+        public override Medium Medium()
+        {
+            return Interfaces.Medium.Email;
         }
     }
 
     internal class TextMessage : Message
     {
-        public string PhoneNumber { get; set; } = "123 456 7891";
+        public override string ContactInfo { get; set; } = "123 456 7891";
+
+        public override Medium Medium()
+        {
+            return Interfaces.Medium.Phone;
+        }
+        
         public TextMessage() { }
     }
 }
