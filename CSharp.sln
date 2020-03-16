@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.CharsStringsText", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.EnumAndBitFlags", "CSharp.EnumAndBitFlags\CSharp.EnumAndBitFlags.csproj", "{AE22AA5D-BADD-4F7D-9783-55FF073D3455}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Arrays", "CSharp.Arrays\CSharp.Arrays.csproj", "{AE664AD5-F1CF-4E08-934C-E26EE4E8006C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{AE22AA5D-BADD-4F7D-9783-55FF073D3455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE22AA5D-BADD-4F7D-9783-55FF073D3455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE22AA5D-BADD-4F7D-9783-55FF073D3455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE664AD5-F1CF-4E08-934C-E26EE4E8006C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE664AD5-F1CF-4E08-934C-E26EE4E8006C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE664AD5-F1CF-4E08-934C-E26EE4E8006C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE664AD5-F1CF-4E08-934C-E26EE4E8006C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
