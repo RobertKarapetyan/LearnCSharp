@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Delegates", "CSharp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.CustomAttributes", "CSharp.CustomAttributes\CSharp.CustomAttributes.csproj", "{85E0DB6F-D564-473A-B65A-F3ECFE4217B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.NullableValueTypes", "CSharp.NullableValueTypes\CSharp.NullableValueTypes.csproj", "{D156CFC2-8787-433B-858C-9906BCAE403E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +98,9 @@ Global
 		{85E0DB6F-D564-473A-B65A-F3ECFE4217B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85E0DB6F-D564-473A-B65A-F3ECFE4217B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85E0DB6F-D564-473A-B65A-F3ECFE4217B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D156CFC2-8787-433B-858C-9906BCAE403E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D156CFC2-8787-433B-858C-9906BCAE403E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D156CFC2-8787-433B-858C-9906BCAE403E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D156CFC2-8787-433B-858C-9906BCAE403E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
