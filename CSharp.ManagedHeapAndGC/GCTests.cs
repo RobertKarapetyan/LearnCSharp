@@ -8,14 +8,6 @@ namespace CSharp.ManagedHeapAndGC
     public class GcTests
     {
         [TestMethod]
-        public void ShouldBreatheOnce()
-        {
-            var person = new Person(isGcCollected:true);
-            Thread.Sleep(10000);
-            Assert.AreEqual(1, person.BreatheCount);
-        }
-
-        [TestMethod]
         public void ShouldBreatheFiveTimes()
         {
             var person = new Person(false);
