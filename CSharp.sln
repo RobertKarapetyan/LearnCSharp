@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.AssemblyLoadingAndRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.RuntimeSerialization", "CSharp.RuntimeSerialization\CSharp.RuntimeSerialization.csproj", "{FB0E9B04-9D49-4FA9-A132-8B11BB118321}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Threads", "CSharp.Threads\CSharp.Threads.csproj", "{49534410-1572-4C56-B533-B68A6BEA3AE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +128,9 @@ Global
 		{FB0E9B04-9D49-4FA9-A132-8B11BB118321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB0E9B04-9D49-4FA9-A132-8B11BB118321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB0E9B04-9D49-4FA9-A132-8B11BB118321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49534410-1572-4C56-B533-B68A6BEA3AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49534410-1572-4C56-B533-B68A6BEA3AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49534410-1572-4C56-B533-B68A6BEA3AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49534410-1572-4C56-B533-B68A6BEA3AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
